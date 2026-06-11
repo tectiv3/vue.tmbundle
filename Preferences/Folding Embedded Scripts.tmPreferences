@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Folding Embedded Scripts</string>
+	<key>scope</key>
+	<string>text.html.vue source.js, text.html.vue source.ts</string>
+	<key>settings</key>
+	<dict>
+		<key>foldingStartMarker</key>
+		<string>(?x)
+	( \{\s*(//.*|/\*.*\*/\s*)?$
+	| \[\s*(//.*)?$
+	| \(\s*(//.*)?$
+	| /\*\*?(?!.*\*/)
+	| ^\s*&lt;(?i:script|style)\b(?!.*&lt;/)
+	)</string>
+		<key>foldingStopMarker</key>
+		<string>(?x)
+	( ^\s*[\}\]\)]
+	| ^\s*\*/
+	| ^\s*&lt;/(?i:script|style)&gt;
+	)</string>
+	</dict>
+	<key>uuid</key>
+	<string>92CE395E-1B6C-465C-9102-D7A476583071</string>
+</dict>
+</plist>

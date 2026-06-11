@@ -15,6 +15,9 @@ and recommended maintaining it in a separate repository — this is that reposit
 - Valueless directives (`v-else`, `#default`) are scoped as attribute names.
 - Corrected backreferences in the `lang=` detection lookaheads (`\1` pointed at the tag
   bracket instead of the quote character).
+- Folding preferences: tag-based folding for templates, plus brace/bracket/comment
+  folding inside `<script>` sections. Without these, the HTML bundle's tag-only folding
+  setting applies to every line of a `.vue` file, so functions inside scripts never fold.
 
 ## Install
 
